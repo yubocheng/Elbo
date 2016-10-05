@@ -4,10 +4,12 @@
 \alias{hi}
 \title{help starts}
 \usage{
-hi(who)
+hi(who, how = c("shout", "whisper"))
 }
 \arguments{
 \item{who}{character(1) the name of person to start a conversation with}
+
+\item{how}{character(1)}
 }
 \value{
 character() a line of text to be used when starting conversation.
@@ -16,7 +18,7 @@ character() a line of text to be used when starting conversation.
 This function returns numbers of letters
 }
 \examples{
-hi("world")
+hi("world","shout")
 
 }
 
