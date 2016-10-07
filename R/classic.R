@@ -4,9 +4,9 @@
 #' describes the 128 samples, ALL-expression.csv are the normalized expressions
 #' values for 12k probesets across 128 samples.
 #'
-#' @param pdata_file
+#' @param pdata_file character(1)
 #'
-#' @param exprs_file
+#' @param exprs_file character(1)
 #'
 #' @return A data.frame() containing samples as rows and phenotype data and
 #' expression data as columns.
