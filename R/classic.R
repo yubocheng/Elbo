@@ -11,8 +11,11 @@
 #' @return A data.frame() containing samples as rows and phenotype data and
 #' expression data as columns.
 #'
+#' @importFrom utils read.csv
 #' @export
 input_classic <- function(pdata_file, exprs_file) {
+    stopifnot(is_scalar_character(pdata_file))
+    stopifnot(is_scalar_character(exprs_file))
     pdata <- read.csv(pdata_file, row.names = 1, check.names = FALSE)
     exprs <- read.csv(exprs_file, row.names = 1, check.names = FALSE)
     merge(pdata, t(exprs), by = 0)
